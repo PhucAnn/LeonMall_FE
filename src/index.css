@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@keyframes slider {
+  0%,
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.animate-slider {
+  animation: slider 6s infinite;
+}
+.animate-slider-delay {
+  animation: slider 6s infinite 3s;
+}
